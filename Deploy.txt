@@ -1,0 +1,6 @@
+# Deploy the model image to OpenShift
+
+oc login api.cluster.example.com:6443 
+oc new-project model-deploy
+oc new-app --name purchase-predictor quay.io/user_name/purchase-predictor:1.0 
+oc expose service purchase-predictor
