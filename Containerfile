@@ -1,3 +1,5 @@
+# Create a Containerfile to build an image with the Flask application:
+
 # Base image
 FROM python:3.9
 
