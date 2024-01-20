@@ -1,0 +1,5 @@
+# Build and push the image to an image registry
+podman login quay.io 
+podman build -t purchase-predictor:1.0 . 
+podman tag purchase-predictor:1.0 quay.io/user_name/purchase-predictor:1.0 
+podman push quay.io/user_name/purchase-predictor:1.0
