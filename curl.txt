@@ -1,0 +1,5 @@
+# use the Flask application with some commands such as:
+
+curl http://purchase-predictor-model-deploy.apps.cluster.example.com/health 
+curl http://purchase-predictor-model-deploy.apps.cluster.example.com/info 
+curl -d '{"time":4}' -H "Content-Type: application/json" > -X POST > http://purchase-predictor-model-deploy.apps.cluster.example.com/predict
